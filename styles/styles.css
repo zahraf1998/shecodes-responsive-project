@@ -32,6 +32,17 @@ img {
   max-width: 100%;
 }
 
+footer {
+  text-align: center;
+  margin-top: 100px;
+  border-top: var(--border);
+  padding: 20px;
+}
+
+footer h2 {
+  font-size: 32px;
+}
+
 .hero {
   height: 600px;
   border-bottom: var(--border);
@@ -62,24 +73,24 @@ img {
 }
 
 .card-images {
-  border: var(--border);
   border-radius: 5px;
 }
 
 .primary-button {
   text-decoration: none;
-  color: #1f1f1f;
-  border: var(--border);
   border-radius: 5px;
   padding: 10px 15px;
   display: inline-block;
-  background-color: var(--secondary-color);
-}
-
-.primary-button:hover {
   color: var(--secondary-color);
   opacity: 0.8;
   background-color: #1f1f1f;
+  border: var(--border);
+  transition: all 200ms ease-in-out;
+}
+
+.primary-button:hover {
+  background-color: var(--secondary-color);
+  color: #1f1f1f;
 }
 
 .brand-img {
@@ -95,6 +106,25 @@ img {
 
 .navigation-bar button {
   border: var(--border);
+}
+
+.platforms i {
+  border: var(--border);
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 200ms ease-in-out;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.platforms i:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.platforms a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
