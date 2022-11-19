@@ -161,6 +161,10 @@ footer h2 {
   }
   .hero {
     text-align: center;
+    height: 500px;
+  }
+  .hero-img {
+    width: 50%;
   }
   .cards-container {
     text-align: center;
