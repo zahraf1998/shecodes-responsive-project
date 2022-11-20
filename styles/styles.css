@@ -1,6 +1,6 @@
 :root {
   --primary-color: #1f1f1f;
-  --secondary-color: #f1f1f1;
+  --secondary-color: #fff;
   --border: 3px solid var(--primary-color);
 }
 
@@ -75,7 +75,7 @@ footer h2 {
 .cards {
   border: 3px solid white;
   border-radius: 5px;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   transition: all 200ms ease-in-out;
 }
 
