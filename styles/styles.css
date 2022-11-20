@@ -1,4 +1,3 @@
-/* weight:400,700 */
 :root {
   --primary-color: #1f1f1f;
   --secondary-color: #f1f1f1;
@@ -6,28 +5,25 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
-  color: var(--primary-color);
   border: 5px solid var(--primary-color);
   border-radius: 5px;
+  color: var(--primary-color);
+  font-family: "Nunito", sans-serif;
   line-height: 2;
 }
 
 h1 {
-  font-weight: bold;
   font-size: 64px;
+  font-weight: bold;
 }
 
 h2 {
-  font-weight: bold;
   font-size: 24px;
+  font-weight: bold;
   opacity: 0.8;
 }
 
-h3 {
-  font-size: 18px;
-}
-
+h3,
 p {
   font-size: 18px;
 }
@@ -37,10 +33,10 @@ img {
 }
 
 footer {
-  text-align: center;
-  margin-top: 100px;
   border-top: var(--border);
+  margin-top: 100px;
   padding: 20px;
+  text-align: center;
 }
 
 footer h2 {
@@ -48,12 +44,12 @@ footer h2 {
 }
 
 .hero {
-  height: 600px;
-  border-bottom: var(--border);
-  margin: 20px 0px 100px 0;
-  padding: 100px 20px;
-  display: flex;
   align-items: center;
+  border-bottom: var(--border);
+  display: flex;
+  height: 600px;
+  margin: 20px 0 100px 0;
+  padding: 100px 20px;
 }
 
 .header {
@@ -62,16 +58,17 @@ footer h2 {
 
 .home-hero-img {
   display: block;
-  width: 50%;
   margin: 20px auto;
+  width: 50%;
 }
 
 .greet {
-  font-weight: bold;
   font-size: 32px;
+  font-weight: bold;
 }
 
-.cards-container {
+.cards-container,
+.work-container {
   max-width: 800px;
 }
 
@@ -85,14 +82,14 @@ footer h2 {
 }
 
 .primary-button {
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  display: inline-block;
-  color: var(--secondary-color);
-  opacity: 0.8;
   background-color: #1f1f1f;
   border: var(--border);
+  border-radius: 5px;
+  color: var(--secondary-color);
+  display: inline-block;
+  opacity: 0.8;
+  padding: 10px 15px;
+  text-decoration: none;
   transition: all 200ms ease-in-out;
 }
 
@@ -102,10 +99,10 @@ footer h2 {
 }
 
 .brand-img {
-  width: 50px;
   border: var(--border);
   border-radius: 50%;
   padding: 5px;
+  width: 50px;
 }
 
 .navigation-bar {
@@ -117,12 +114,12 @@ footer h2 {
 }
 
 .platforms i {
+  background-color: var(--primary-color);
   border: var(--border);
   border-radius: 50%;
+  color: var(--secondary-color);
   font-size: 24px;
   transition: all 200ms ease-in-out;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
 }
 
 .platforms i:hover {
@@ -131,44 +128,49 @@ footer h2 {
 }
 
 .platforms a {
-  text-decoration: none;
   color: var(--primary-color);
+  text-decoration: none;
 }
 
 .item-container {
-  text-align: center;
   max-width: 800px;
+  text-align: center;
 }
 
 .item {
   border: var(--border);
   border-radius: 5px;
-  width: 150px;
   margin: 20px auto;
   padding: 30px 0;
+  width: 150px;
 }
 
 .item i {
   font-size: 32px;
 }
 
-.work-container {
-  max-width: 800px;
-}
 @media (max-width: 768px) {
   h1 {
     font-size: 48px;
   }
+
   .hero {
-    text-align: center;
     height: 500px;
+    text-align: center;
   }
+
   .hero-img {
     width: 50%;
   }
+
+  .home-hero-img {
+    width: 40%;
+  }
+
   .cards-container {
     text-align: center;
   }
+
   .card-images {
     margin: 20px 0;
   }
