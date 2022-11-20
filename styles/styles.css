@@ -73,8 +73,14 @@ footer h2 {
 }
 
 .cards {
-  border: var(--border);
+  border: 3px solid white;
   border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-in-out;
+}
+
+.cards:hover {
+  border: var(--border);
 }
 
 .card-images {
@@ -138,8 +144,6 @@ footer h2 {
 }
 
 .item {
-  border: var(--border);
-  border-radius: 5px;
   margin: 20px auto;
   padding: 30px 0;
   width: 150px;
